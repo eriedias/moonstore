@@ -31,15 +31,26 @@
         </div>
       </div>
     </div>
-    <button>
-      Total: 0
+    <button @click="increment()">
+      Total: {{ total }}
     </button>
   </section>
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
   name: 'IndexPage',
-  layout: 'DefaultHeader'
+  layout: 'DefaultHeader',
+  computed: {
+    total () {
+      return this.$store.state.total
+    }
+  },
+  methods: {
+    ...mapMutations({
+      increment: 'increment'
+    })
+  }
 }
 </script>

@@ -8,7 +8,7 @@
           </figure>
           <div class="text">
             <h3>{{ product.title }}</h3>
-            <span class="price">$ {{ product.price }}</span>
+            <span class="price">$ {{ product.price.toFixed(2) }}</span>
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@ import { mapMutations, mapState } from 'vuex'
 
 export default {
   name: 'IndexPage',
-  layout: 'DefaultHeader',
+  layout: 'DefaultStructure',
   async fetch () {
     this.setProducts(await fetch(
       'https://fakestoreapi.com/products'

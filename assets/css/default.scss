@@ -1,3 +1,16 @@
+/* Master Reset */
+* {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -5,8 +18,20 @@ body {
   text-align: center;
   padding-top: 20px;
   .logo {
+    margin-bottom: 15px;
     img {
       width: 200px;
+    }
+  }
+  nav {
+    background: #7c82a5;
+    padding: 15px 0;
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+      margin: 0 10px;  
+    }:hover {
+      color: #CBF3FF;
     }
   }
 }

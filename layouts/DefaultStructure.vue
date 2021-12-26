@@ -3,7 +3,10 @@
     <figure class="logo">
       <img src="~/assets/images/logo.svg">
     </figure>
-    <a href="">Cart (0)</a>
+    <nav>
+      <a href="">Home</a>
+      <a href="">Cart (0)</a>
+    </nav>
     <Nuxt />
   </header>
 </template>

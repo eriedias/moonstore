@@ -1,9 +1,9 @@
 export const state = () => ({
-  total: 2
+  products: []
 })
 
 export const mutations = {
-  increment (state) {
-    state.total++
+  setProducts (state, products) {
+    state.products = products
   }
 }

@@ -22,7 +22,7 @@ body {
     margin: 0 -12px;
     .item {
       flex: 1 0 21%;
-      margin: 0 12px;
+      margin: 0 12px 24px;
       box-shadow: 0 25px 25px rgba(0,0,0,.1);
       border-radius: 6px;
       overflow: hidden;
@@ -42,6 +42,7 @@ body {
         padding: 24px;
         h3 {
           margin: 0 0 10px;
+          font-size: 16px;
         }
       }
     }
